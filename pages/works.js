@@ -2,21 +2,16 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import NextLink from 'next/link'
-import Link from 'next/link'
 
 import thumbMelo from '../public/images/melomania.png'
 import thumbYouTube from '../public/images/links/youtube1.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch11.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
 import thumbMenkiki from '../public/images/music.png'
 import thumbMargelo from '../public/images/safeconnect.png'
 import thumbModeTokyo from '../public/images/car.png'
 import thumbStyly from '../public/images/rocket.png'
 import thumbPichu2 from '../public/images/binary.png'
 import thumbFreeDBTagger from '../public/images/etherscan.jpg'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">

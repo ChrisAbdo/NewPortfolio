@@ -70,7 +70,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hey there! I'm a full stack developer based in Philadelphia.
+        Hey there! I&apos;m a full stack developer based in Philadelphia.
       </Box>
 
       <Section delay={0.1}>
@@ -148,7 +148,7 @@ const Home = () => (
           Expected graduation from Drexel University
         </BioSection>
         <BioSection>
-          <BioYear>'19 - present</BioYear>
+          <BioYear>&apos;19 - present</BioYear>
           Working as a full time student while creating projects on the side!
           Actively looking for internship opportunities.
         </BioSection>

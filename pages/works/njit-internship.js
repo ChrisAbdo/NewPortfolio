@@ -46,9 +46,9 @@ const Work = () => (
           height="448"
           src="https://www.youtube.com/embed/x_IxKGmSKoA?list=TLGGATNRC-FxFPAwODA4MjAyMg"
           title="C elegans worm imaged with SCAPE 2.0 at 25 volumes per second"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </AspectRatio>
     </Container>
