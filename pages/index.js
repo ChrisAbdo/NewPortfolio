@@ -156,7 +156,7 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          I enjoy...
         </Heading>
         <Paragraph>
           Producing Music, Programming, Web Development, and Learning.
@@ -234,7 +234,7 @@ const Home = () => (
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
+              Learn more about me
             </Button>
           </NextLink>
         </Box>

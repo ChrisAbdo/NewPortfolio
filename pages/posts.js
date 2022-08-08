@@ -2,6 +2,7 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
+import { BioSection, BioYear } from '../components/bio'
 
 import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portfolio.jpg'
 import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
@@ -16,62 +17,42 @@ const Posts = () => (
   <Layout title="Posts">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Popular Posts
+        Some more about me!
       </Heading>
 
-      <Section delay={0.1}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="How to build a portfolio website"
-            thumbnail={thumbPortfolio}
-            href="https://www.youtube.com/watch?v=bSMZgXzC9AA"
-          />
-          <GridItem
-            title="How to take notes in Markdown efficiently with Inkdrop"
-            thumbnail={thumbHowToUseInkdrop}
-            href="https://www.youtube.com/watch?v=-qBavwqc_mY"
-          />
-          <GridItem
-            title="My Fish workflow"
-            thumbnail={thumbFishWorkflow}
-            href="https://www.youtube.com/watch?v=KKxhf50FIPI"
-          />
-          <GridItem
-            title="My desk setup (Late 2020)"
-            thumbnail={thumbMyDeskSetup}
-            href="https://www.youtube.com/watch?v=1OFDMwDlnOE"
-          />
-        </SimpleGrid>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Abilities
+        </Heading>
+        <BioSection>
+          <BioYear>Programming Languages</BioYear>
+          JavaScript, Solidity, Python, Java, HTML/CSS
+        </BioSection>
+        <BioSection>
+          <BioYear>Technical Abilities</BioYear>
+          Next.js, React, TailwindCSS, Git, Smart Contracts, Remix, Redux,
+          Firebase, Testing (Chai)
+        </BioSection>
+        <BioSection>
+          <BioYear>Non-Technical</BioYear>
+          Agile Workflow (Scrum), Interpersonal skills, Attention to detail
+        </BioSection>
+        <BioSection>
+          <BioYear>Languages</BioYear>
+          Fluent in Arabic and English, Conversational in Spanish
+        </BioSection>
       </Section>
 
-      <Section delay={0.3}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="How I’ve Attracted The First 500 Paid Users For My SaaS That Costs $5/mo"
-            thumbnail={thumb500PaidUsers}
-            href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
-          />
-          <GridItem
-            title="I stopped setting a financial goal for my SaaS"
-            thumbnail={thumbFinancialGoal}
-            href="https://blog.inkdrop.app/i-stopped-setting-a-financial-goal-for-my-saas-a92c3db65506"
-          />
-        </SimpleGrid>
-      </Section>
-
-      <Section delay={0.5}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="How to Price Yourself as a Freelance Developer"
-            thumbnail={thumbHowToPriceYourself}
-            href="https://blog.inkdrop.app/how-to-price-yourself-as-a-freelance-developer-3453dfd59d91"
-          />
-          <GridItem
-            title="I made my React Native app 50x faster"
-            thumbnail={thumb50xFaster}
-            href="https://www.youtube.com/watch?v=vj723NlrIQc"
-          />
-        </SimpleGrid>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Extra Curricular Activities
+        </Heading>
+        <BioSection>
+          <BioYear>Clubs</BioYear>
+          Drexel Cyber Security / Information Technology Club Drexel MENA
+          (Middle Eastern and North African) Club - Organized events spreading
+          awareness about current issues happening in the MENA region
+        </BioSection>
       </Section>
     </Container>
   </Layout>
