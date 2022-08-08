@@ -18,8 +18,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbYouTube from '../public/images/links/youtube1.png'
+import thumbInkdrop from '../public/images/works/inkdrop_eyecatch11.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -30,7 +30,7 @@ const Home = () => (
   <Layout>
     <Container>
       <Box marginTop={5} display={{ md: 'flex' }}>
-        <Box marginTop={3} flexGrow={1}>
+        <Box marginTop={4} flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Christopher Abdo
           </Heading>
@@ -45,8 +45,7 @@ const Home = () => (
         >
           <Box
             borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
+            marginBottom={4}
             w="100px"
             h="100px"
             display="inline-block"
@@ -144,7 +143,10 @@ const Home = () => (
           University with a candidate for Bachelor of Science in Software
           Engineering.
         </BioSection>
-
+        <BioSection>
+          <BioYear>2024</BioYear>
+          Expected graduation from Drexel University
+        </BioSection>
         <BioSection>
           <BioYear>'19 - present</BioYear>
           Working as a full time student while creating projects on the side!
@@ -215,17 +217,17 @@ const Home = () => (
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
+            title="Web3.Me"
             thumbnail={thumbYouTube}
           >
-            My YouTube channel (&gt;100k subs)
+            A decentralized free lancing and self promotion platform
           </GridItem>
           <GridItem
             href="https://www.inkdrop.app/"
-            title="Inkdrop"
+            title="PxArt"
             thumbnail={thumbInkdrop}
           >
-            A Markdown note-taking app
+            A decentralized community pixel art creator
           </GridItem>
         </SimpleGrid>
 

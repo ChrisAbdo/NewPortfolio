@@ -12,40 +12,34 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="Web3Me">
+  <Layout title="music-visualizer">
     <Container>
       <Title>
-        Web3.Me <Badge>2021-</Badge>
+        MusicVisualizer <Badge>2020</Badge>
       </Title>
-      <P>
-        A decentralized free lancing and talent finding platform. This website
-        is designed to promote your Web3 skills and find a gig.
-      </P>
+      <P>An HTML/CSS/JS music visualizer.</P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.melomania.space/">
-            PLACEHOLDER <ExternalLinkIcon mx="2px" />
+          <Link href="https://happy-hodgkin-63e36b.netlify.app/">
+            https://happy-hodgkin-63e36b.netlify.app/{' '}
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
-        <ListItem>
-          <Meta>Platform</Meta>
-          <span>Windows/macOS</span>
-        </ListItem>
+
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Next.js, Truffle, Web3.js, Ethers.js</span>
+          <span>HTML, CSS, JS</span>
         </ListItem>
         <ListItem>
           <Meta>GitHub</Meta>
-          <Link href="https://github.com/ChrisAbdo/Prisma-NextTest">
-            Prisma-NextTest <ExternalLinkIcon mx="2px" />
+          <Link href="https://github.com/ChrisAbdo/MusicVisuaizer">
+            Music Visualizer Github <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
 
-      <WorkImage src="/images/links/youtube1.png" alt="Inkdrop" />
-      <WorkImage src="/images/w3mcode.png" alt="Inkdrop" />
+      <WorkImage src="/images/music.png" alt="Inkdrop" />
     </Container>
   </Layout>
 )

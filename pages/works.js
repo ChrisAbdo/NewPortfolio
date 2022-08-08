@@ -2,16 +2,20 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
+import NextLink from 'next/link'
+import Link from 'next/link'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbMelo from '../public/images/melomania.png'
+import thumbYouTube from '../public/images/links/youtube1.png'
+import thumbInkdrop from '../public/images/works/inkdrop_eyecatch11.png'
 import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
 import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
+import thumbMenkiki from '../public/images/music.png'
+import thumbMargelo from '../public/images/safeconnect.png'
+import thumbModeTokyo from '../public/images/car.png'
+import thumbStyly from '../public/images/rocket.png'
+import thumbPichu2 from '../public/images/binary.png'
+import thumbFreeDBTagger from '../public/images/etherscan.jpg'
 import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 
 const Works = () => (
@@ -23,35 +27,28 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem id="pxart" title="PxArt" thumbnail={thumbInkdrop}>
+            A decentralized community pixel art building platform.
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
-          >
-            Music recommendation app for iOS
+          <WorkGridItem id="melomania" title="Melomania" thumbnail={thumbMelo}>
+            A decentralized music NFT marketplace and crowdsourcing platform.
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
-          <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
-          >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+          <WorkGridItem id="web3me" title="Web3.me" thumbnail={thumbYouTube}>
+            A decentralized free lancing and talent finding platform.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+          <WorkGridItem
+            id="etherscan-api"
+            thumbnail={thumbFreeDBTagger}
+            title="Etherscan ERC-20 API"
+          >
+            Etherscan ERC-20 Token Top Mover tracker API using NodeJS
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -66,23 +63,33 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
-          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
-            A website of the elite app development and contracting agency based
-            in Austria
+          <WorkGridItem
+            id="safeconnect"
+            thumbnail={thumbMargelo}
+            title="Safe Connect"
+          >
+            ETHNYC Hackathon prize winner for Optimism.io and WalletConnect
+            (Best Social project)
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
           <WorkGridItem
-            id="modetokyo"
+            id="njit-internship"
             thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
+            title="NJIT Internship"
           >
-            The mode magazine for understanding to personally enjoy Japan
+            Summer Internship @ NJIT where my team developed a biomimetic
+            navigation system.
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
+          <WorkGridItem
+            id="rocket-renegade"
+            thumbnail={thumbStyly}
+            title="Rocket Renegade"
+          >
+            A 2D platformer game which utilizes a real-time physics engine
+            developed by our group.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -97,23 +104,23 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
+          <WorkGridItem
+            id="binary-search-tree"
+            thumbnail={thumbPichu2}
+            title="Visual Binary Search Tree"
+          >
+            A visual representation of a binary search tree coded using HTML,
+            CSS, and JavaScript.
           </WorkGridItem>
         </Section>
         <Section delay={0.5}>
           <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
+            id="music-visualizer"
+            thumbnail={thumbMenkiki}
+            title="Music Visualizer"
           >
-            Automatic audio file tagging tool using FreeDB for Windows
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
+            Music Visualizer coded with HTML, CSS, and JavaScript. This program
+            with visualize any audio you input.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
