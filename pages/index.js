@@ -216,17 +216,13 @@ const Home = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
+            href="/works/web3me"
             title="Web3.Me"
             thumbnail={thumbYouTube}
           >
             A decentralized free lancing and self promotion platform
           </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="PxArt"
-            thumbnail={thumbInkdrop}
-          >
+          <GridItem href="/works/pxart" title="PxArt" thumbnail={thumbInkdrop}>
             A decentralized community pixel art creator
           </GridItem>
         </SimpleGrid>
