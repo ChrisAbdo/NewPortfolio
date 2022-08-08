@@ -29,24 +29,14 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        Hello, I&apos;m an indie app developer based in Japan!
-      </Box>
-
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
+      <Box marginTop={5} display={{ md: 'flex' }}>
+        <Box marginTop={3} flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Christopher Abdo
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Software Engineer ( Blockchain / Web2 / UI/UX )</p>
         </Box>
+
         <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
@@ -64,7 +54,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/me.jpg"
               alt="Profile image"
               borderRadius="full"
               width="100%"
@@ -73,12 +63,22 @@ const Home = () => (
           </Box>
         </Box>
       </Box>
+      <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="center"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        css={{ backdropFilter: 'blur(10px)' }}
+      >
+        Hey there! I'm a full stack developer based in Philadelphia.
+      </Box>
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <Paragraph>
+        {/* <Paragraph>
           Takuya is a freelance and a full-stack developer based in Osaka with a
           passion for building digital services/stuff he wants. He has a knack
           for all things launching products, from planning and designing all the
@@ -94,11 +94,32 @@ const Home = () => (
             <Link target="_blank">Dev as Life</Link>
           </NextLink>
           &quot; has more than 100k subscribers.
+        </Paragraph> */}
+        <Paragraph>
+          I am a full-stack developer based in Philadelphia with a passion for
+          building dApps and Web2.0 platforms. I have always had a knack for
+          problem solving and trying to find the most efficient way to solve
+          them. I love developing new platforms, launching them, and finding new
+          ways to constantly better them. In the past year, I have built and
+          pushed 3 decentralized Applications to the Ethereum chain:{' '}
+          <NextLink href="/works/melomania" passHref scroll={false}>
+            <Link>Melomania</Link>
+          </NextLink>
+          ,{' '}
+          <NextLink href="/works/web3me" passHref scroll={false}>
+            <Link>Web3.Me</Link>
+          </NextLink>
+          , and{' '}
+          <NextLink href="/works/pxart" passHref scroll={false}>
+            <Link>PxArt.</Link>
+          </NextLink>
+          &nbsp;When I am not coding, I love playing video games, watching
+          movies, playing basketball, and going hiking.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+              View my projects
             </Button>
           </NextLink>
         </Box>
@@ -109,22 +130,25 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2001</BioYear>
+          Born in New Brunswick, NJ.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2018</BioYear>
+          Research Internship at the New Jersey Institute of Technology.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2019</BioYear>
+          Graduated South Brunswick High School with the accomplishment of being
+          top 15% in the class. Began studying Software Engineering at Drexel
+          University with a candidate for Bachelor of Science in Software
+          Engineering.
         </BioSection>
+
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>'19 - present</BioYear>
+          Working as a full time student while creating projects on the side!
+          Actively looking for internship opportunities.
         </BioSection>
       </Section>
 
@@ -133,15 +157,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          Producing Music, Programming, Web Development, and Learning.
         </Paragraph>
       </Section>
 
@@ -151,46 +167,46 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/chrisabdo" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @chrisabdo
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://twitter.com/melomania_eth" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @inkdrop_app (English)
+                @melomania_eth (project twitter)
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="https://twitter.com/chrisabdo_eth" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @craftzdog (日本語)
+                @chrisabdo_eth (personal twitter)
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="https://instagram.com/chris.abdo" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @craftzdog
+                @chris.abdo
               </Button>
             </Link>
           </ListItem>
