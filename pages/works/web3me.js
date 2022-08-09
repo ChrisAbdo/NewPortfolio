@@ -12,7 +12,7 @@ const Work = () => (
       </Title>
       <P>
         A decentralized free lancing and talent finding platform. This website
-        is designed to promote your Web3 skills and find a gig.
+        is designed to promote your Web3 skills and help you find a new opportunity working in the Web3 space. Users are able to filter by name, role, etc.
       </P>
       <List ml={4} my={4}>
         <ListItem>

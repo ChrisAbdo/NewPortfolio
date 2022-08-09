@@ -15,20 +15,20 @@ const Posts = () => (
           Abilities
         </Heading>
         <BioSection>
-          <BioYear>Programming Languages</BioYear>
+          <BioYear>Programming Languages:</BioYear>
           JavaScript, Solidity, Python, Java, HTML/CSS
         </BioSection>
         <BioSection>
-          <BioYear>Technical Abilities</BioYear>
+          <BioYear>Technical Abilities:</BioYear>
           Next.js, React, TailwindCSS, Git, Smart Contracts, Remix, Redux,
           Firebase, Testing (Chai)
         </BioSection>
         <BioSection>
-          <BioYear>Non-Technical</BioYear>
+          <BioYear>Non-Technical:</BioYear>
           Agile Workflow (Scrum), Interpersonal skills, Attention to detail
         </BioSection>
         <BioSection>
-          <BioYear>Languages</BioYear>
+          <BioYear>Languages:</BioYear>
           Fluent in Arabic and English, Conversational in Spanish
         </BioSection>
       </Section>
@@ -39,9 +39,12 @@ const Posts = () => (
         </Heading>
         <BioSection>
           <BioYear>Clubs</BioYear>
-          Drexel Cyber Security / Information Technology Club Drexel MENA
+          Drexel Cyber Security / Information Technology Club 
+          <BioSection>
+          Drexel MENA
           (Middle Eastern and North African) Club - Organized events spreading
           awareness about current issues happening in the MENA region
+          </BioSection>
         </BioSection>
       </Section>
     </Container>

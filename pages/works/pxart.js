@@ -13,8 +13,9 @@ const Work = () => (
       <P>
         A decentralized community art building platform. Users are able to mint
         1 block of a 100 block canvas, allowing their ability to mint the final
-        art drawing as an NFT which is able to be sold on OpenSea
+        art drawing as an NFT which is able to be sold on OpenSea.
       </P>
+      
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
